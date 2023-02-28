@@ -11,11 +11,15 @@ body {
   width: 100vw;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .containerMain {
   border: 1px solid black;
   width: 800px;
+  height: 100%;
+  margin: 1rem;
 }
 
 h1 {
@@ -76,6 +80,25 @@ ul {
 }
 .taskDelete:hover {
   border: 1px solid white;
+}
+
+.deleteAllChecked {
+  width: 400px;
+  height: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: indianred;
+  color: white;
+  cursor: pointer;
+}
+.deleteAllChecked:hover {
+  background-color: darkred;
+}
+.deleteAllChecked:active {
+  transform: scale(0.975);
 }
 
 /*# sourceMappingURL=style.css.map */
